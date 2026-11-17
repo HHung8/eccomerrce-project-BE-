@@ -15,6 +15,7 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
+@Table(name = "users")
 public class User {
     @Enumerated(EnumType.STRING)
     private final USER_ROLE role = USER_ROLE.ROLE_CUSTOMER;
@@ -33,6 +34,5 @@ public class User {
     private String mobile;
 
 }
-
 
 

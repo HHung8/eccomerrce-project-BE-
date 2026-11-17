@@ -15,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-
+@Table(name = "orders")
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -39,12 +39,9 @@ public class Order {
     private double totalMrpPrice;
     private Integer totalSellingPrice;
     private Integer discount;
-
     private OrderStatus orderStatus;
-
     private int totalItem;
     private PaymentStatus paymentStatus = PaymentStatus.PENDING;
-
     private LocalDateTime orderDate = LocalDateTime.now();
     private LocalDateTime deliverDate = orderDate.plusDays(7);
 }

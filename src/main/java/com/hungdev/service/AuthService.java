@@ -1,5 +1,5 @@
-package com.hungdev.service.impl;
+package com.hungdev.service;
 
 public class AuthService {
-    
+
 }
