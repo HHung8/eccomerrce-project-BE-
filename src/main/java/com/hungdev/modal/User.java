@@ -18,7 +18,7 @@ import java.util.Set;
 @Table(name = "users")
 public class User {
     @Enumerated(EnumType.STRING)
-    private final USER_ROLE role = USER_ROLE.ROLE_CUSTOMER;
+    private USER_ROLE role = USER_ROLE.ROLE_CUSTOMER;
     @OneToMany
     private Set<Address> addresses = new HashSet<>();
     @OneToMany
